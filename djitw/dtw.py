@@ -238,8 +238,8 @@ def dtw(distance_matrix, gully=1., additive_penalty=0.,
     score = float(distance_matrix[i, j])
 
     # Pre-allocate the x and y path index arrays
-    x_indices = np.zeros(sum(traceback.shape), dtype=np.int)
-    y_indices = np.zeros(sum(traceback.shape), dtype=np.int)
+    x_indices = np.zeros(sum(traceback.shape), dtype=int)
+    y_indices = np.zeros(sum(traceback.shape), dtype=int)
     # Start the arrays from the end of the path
     x_indices[0] = i
     y_indices[0] = j
